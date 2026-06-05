@@ -3,59 +3,71 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tool | CAD Font Check</title>
-  <meta name="description" content="Full working tool with copy, save, and JSON export actions.">
+  <title>CAD Font Check Tool | CAD Font Check</title>
+  <meta name="description" content="Run the CAD Font Check workflow with browser-side inputs, copy output, local save, and JSON export.">
   <link rel="canonical" href="https://fontcheck.freedownloadcad.com/tool/">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta property="og:title" content="CAD Font Check Tool | CAD Font Check">
+  <meta property="og:description" content="Run the CAD Font Check workflow with browser-side inputs, copy output, local save, and JSON export.">
+  <meta property="og:url" content="https://fontcheck.freedownloadcad.com/tool/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://fontcheck.freedownloadcad.com/assets/visual.png">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="google-adsense-account" content="ca-pub-0268893833921284">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0268893833921284" crossorigin="anonymous"></script>
+  <link rel="preload" as="image" href="../assets/visual.png">
   <link rel="stylesheet" href="../styles.css">
+  <script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebPage","name":"CAD Font Check Tool","description":"Run the CAD Font Check workflow with browser-side inputs, copy output, local save, and JSON export.","url":"https://fontcheck.freedownloadcad.com/tool/","applicationCategory":"BusinessApplication","isPartOf":{"@type":"WebSite","name":"CAD Font Check","url":"https://fontcheck.freedownloadcad.com/"}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"CAD Font Check","item":"https://fontcheck.freedownloadcad.com/"},{"@type":"ListItem","position":2,"name":"CAD Font Check Tool","item":"https://fontcheck.freedownloadcad.com/tool/"}]}]</script>
 </head>
-<body style="--bg:#f3f6f2;--panel:#fffdf7;--ink:#1e2927;--accent:#16736d;--accent-2:#bf7335;--line:#c9d5cf">
+<body style="--bg:#f7f6f1;--panel:#fffdfa;--ink:#161819;--muted:#626668;--accent:#0f5f69;--accent-2:#c17935;--line:#d8d5cc;--dark:#111517" data-archetype="cad" data-layout="compact">
   <header class="topbar">
-    <a class="brand" href="../"><span class="brand-mark">CA</span><span>freedownloadcad.com</span></a>
-    <nav class="nav" aria-label="Primary">
-      <a href="../tool/">Tool</a>
-      <a href="../templates/">Templates</a>
-      <a href="../workspace/">Workspace</a>
-      <a href="../plans/">Plans</a>
-    </nav>
+    <a class="brand" href="../"><span class="brand-mark">CF</span><span>fontcheck.freedownloadcad.com</span></a>
+    <nav class="nav" aria-label="Primary"><a href="../tool/">Tool</a><a href="../guides/">Guides</a><a href="../library/">Library</a><a href="../templates/">Templates</a><a href="../compare/">Compare</a></nav>
   </header>
   <main>
-    <section class="app-grid"><nav class="side-nav" aria-label="App sections"><a href="../" >Dashboard</a><a href="../tool/" aria-current="page">Tool</a><a href="../workspace/" >Workspace</a><a href="../templates/" >Templates</a><a href="../reports/" >Reports</a><a href="../library/" >Library</a><a href="../examples/" >Examples</a><a href="../checklists/" >Checklists</a><a href="../integrations/" >Integrations</a><a href="../settings/" >Settings</a><a href="../plans/" >Plans</a><a href="../faq/" >FAQ</a></nav><div class="workspace-main"><section class="hero-tool" id="tool">
+    <section class="hero hero-compact">
+    <div class="hero-copy">
+      <p class="eyebrow">Working tool</p>
+      <h1>CAD Font Check Tool</h1>
+      <p class="lede">Run the CAD Font Check workflow with browser-side inputs, copy output, local save, and JSON export.</p>
+      <div class="action-row">
+        <a class="button" href="../tool/">Run the drawing workflow</a>
+        <a class="button secondary" href="../guides/">Read guides</a>
+      </div>
+      <div class="hero-stats">
+        <div><span>Pages</span><strong>121</strong></div>
+        <div><span>Family</span><strong>CAD Studio</strong></div>
+        <div><span>Export</span><strong>Copy / JSON</strong></div>
+      </div>
+    </div>
+    <figure class="visual-frame">
+      <img src="../assets/visual.png" alt="CAD Font Check visual interface concept">
+    </figure>
+  </section><section class="tool-stage" id="tool">
     <div class="tool-panel">
-      <div class="panel-heading"><h2>Inputs</h2><span class="pill">56 / 85</span></div>
+      <div class="panel-heading"><span>Inputs</span><strong>checklist</strong></div>
       <div class="fields-grid" id="toolFields"></div>
     </div>
     <div class="result-panel">
       <div class="result-toolbar">
-        <h2>Result</h2>
+        <div><span class="eyebrow">Live output</span><h2>Result</h2></div>
         <div class="toolbar-row">
           <button class="button secondary" id="copyExport" type="button">Copy output</button>
-          <button class="button secondary" type="button" data-save-current>Save project</button>
-          <button class="button" type="button" data-download-current>Download JSON</button>
+          <button class="button secondary" type="button" data-save-current>Save</button>
+          <button class="button" type="button" data-download-current>Export JSON</button>
         </div>
       </div>
       <div id="toolResult"></div>
-      <div class="ad-unit" aria-label="Advertisement"><span>Advertisement</span></div>
     </div>
-  </section>
-  <section class="content-band">
-    <div class="section-heading"><h2>Use Cases</h2><p>Built for repeat workflows, not one-off thin content.</p></div>
-    <div class="example-grid" id="examples"></div>
-  </section>
-  <section class="content-band">
-    <div class="section-heading"><h2>Limits</h2><p>Every generated result needs professional review before publication or project issue.</p></div>
-    <ul class="checklist" id="limits"></ul>
-  </section>
-  <section class="content-band">
-    <div class="section-heading"><h2>FAQ</h2><p>Short support answers for the SaaS pilot.</p></div>
-    <div id="faq"></div>
-  </section></div></section>
-    
+  </section><aside class="ad-unit" aria-label="Advertisement">
+    <span>Advertisement</span>
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0268893833921284" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  </aside>
   </main>
-  <footer class="footer"><span>CAD Font Check for freedownloadcad.com</span><a href="../privacy/">Privacy</a></footer>
-  <script>window.SITE_CONFIG = {"title":"CAD Font Check","kind":"checklist","fields":[{"id":"items","label":"Open risk items","type":"checklist","options":["Missing source reference","Scale not verified","Layer standard mismatch","Code or safety assumption","Export not tested"],"default":["Missing source reference","Scale not verified"]}],"data":{"items":[{"title":"Missing source reference","category":"Completeness","weight":3,"note":"Add source, xref, or basis note before issuing CAD font check."},{"title":"Scale not verified","category":"Drawing QA","weight":4,"note":"Check viewport, plotted scale, and dimension readability."},{"title":"Layer standard mismatch","category":"CAD standard","weight":2,"note":"Map object types to the project layer naming system."},{"title":"Code or safety assumption","category":"Professional review","weight":5,"note":"Route to a qualified reviewer before final publication."},{"title":"Export not tested","category":"Delivery","weight":3,"note":"Open the exported PDF/CSV/JSON before sending."}]},"engine":{},"examples":[{"title":"First working pass","body":"CAD Font Check turns a loose input into a copy-ready output that can be reviewed, saved, or exported."},{"title":"Repeat workflow","body":"The browser workspace keeps saved projects local so repeat visitors can use the same tool without a backend login."},{"title":"Professional review","body":"Use the result as a structured starter, then confirm local rules, project standards, prices, and assumptions before final use."}],"faq":[{"q":"Is CAD Font Check free to use?","a":"Yes. This pilot is a free browser-side SaaS utility with copy, save, and JSON export actions."},{"q":"Does it replace a licensed professional?","a":"No. It creates a useful first pass and checking structure; final decisions still need qualified review."},{"q":"Where are saved projects stored?","a":"Saved projects are kept in this browser's localStorage for the static pilot build."}],"limits":["Do not treat generated outputs as legal, code, engineering, tax, or safety certification.","No private credentials are required by this static site.","Ad placements stay outside primary action controls."]};</script>
+  <footer class="footer"><span>CAD Font Check for freedownloadcad.com</span><a href="../privacy/">Privacy</a><a href="../sitemap.xml">Sitemap</a></footer>
+  <script>window.SITE_CONFIG = {"title":"CAD Font Check","kind":"checklist","fields":[{"id":"items","label":"Open risk items","type":"checklist","options":["Unit Mismatch","Missing Layer Rules","Unreviewed Xrefs","Plot Style Drift","Ambiguous Block Naming","Unsupported Font References","Preflight A DWG Package","Standardize A Drawing Set","Prepare A Client Handoff","Audit A Template","Compare Block Options","Document Drawing Assumptions"],"default":["Unit Mismatch","Missing Layer Rules","Unreviewed Xrefs"]}],"data":{"items":[{"title":"Unit Mismatch","note":"Unit Mismatch should be resolved or explicitly marked as an assumption before using CAD Font Check in a live workflow.","category":"Scope","weight":1},{"title":"Missing Layer Rules","note":"Missing Layer Rules should be resolved or explicitly marked as an assumption before using CAD Font Check in a live workflow.","category":"Quality","weight":2},{"title":"Unreviewed Xrefs","note":"Unreviewed Xrefs should be resolved or explicitly marked as an assumption before using CAD Font Check in a live workflow.","category":"Delivery","weight":3},{"title":"Plot Style Drift","note":"Plot Style Drift should be resolved or explicitly marked as an assumption before using CAD Font Check in a live workflow.","category":"Review","weight":4},{"title":"Ambiguous Block Naming","note":"Ambiguous Block Naming should be resolved or explicitly marked as an assumption before using CAD Font Check in a live workflow.","category":"Scope","weight":1},{"title":"Unsupported Font References","note":"Unsupported Font References should be resolved or explicitly marked as an assumption before using CAD Font Check in a live workflow.","category":"Quality","weight":2},{"title":"Preflight A DWG Package","note":"Preflight A DWG Package should be resolved or explicitly marked as an assumption before using CAD Font Check in a live workflow.","category":"Delivery","weight":3},{"title":"Standardize A Drawing Set","note":"Standardize A Drawing Set should be resolved or explicitly marked as an assumption before using CAD Font Check in a live workflow.","category":"Review","weight":4},{"title":"Prepare A Client Handoff","note":"Prepare A Client Handoff should be resolved or explicitly marked as an assumption before using CAD Font Check in a live workflow.","category":"Scope","weight":1},{"title":"Audit A Template","note":"Audit A Template should be resolved or explicitly marked as an assumption before using CAD Font Check in a live workflow.","category":"Quality","weight":2},{"title":"Compare Block Options","note":"Compare Block Options should be resolved or explicitly marked as an assumption before using CAD Font Check in a live workflow.","category":"Delivery","weight":3},{"title":"Document Drawing Assumptions","note":"Document Drawing Assumptions should be resolved or explicitly marked as an assumption before using CAD Font Check in a live workflow.","category":"Review","weight":4}]},"engine":{},"examples":[{"title":"Tool-first workflow","body":"CAD Font Check opens with the working controls so visitors can act before reading long support content."},{"title":"Reference depth","body":"Each supporting page explains a specific cad studio decision, risk, or template pattern for search and repeat use."},{"title":"Review-ready export","body":"Outputs are structured for copy, JSON download, and human review rather than pretending to replace a professional."}],"faq":[{"q":"What is CAD Font Check?","a":"CAD Font Check is a browser-side SaaS utility with a working tool, reference pages, templates, and exportable notes."},{"q":"Where is data stored?","a":"The static build stores saved projects in this browser only. It does not require login credentials."},{"q":"Can this replace professional review?","a":"No. It creates a clear first pass and checklist, but final use still needs qualified review."}],"limits":["This static tool does not provide legal, engineering, safety, tax, or code certification.","AdSense is present, but primary controls stay visually separate from ad areas.","Outputs should be checked against current project standards, local rules, and live pricing."]};</script>
   <script src="../app.js"></script>
   <script src="../saas.js"></script>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 </body>
 </html>
